@@ -1,0 +1,16 @@
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\CourseGPAFile.exe
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\courseData.txt
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\CourseGPAFile.deps.json
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\CourseGPAFile.runtimeconfig.json
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\CourseGPAFile.dll
+C:\Users\knguyen11\dotnet class\CourseGPAFile\bin\Release\net6.0\CourseGPAFile.pdb
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.csproj.AssemblyReference.cache
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.AssemblyInfoInputs.cache
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.AssemblyInfo.cs
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.csproj.CoreCompileInputs.cache
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.dll
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\refint\CourseGPAFile.dll
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.pdb
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\CourseGPAFile.genruntimeconfig.cache
+C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Release\net6.0\ref\CourseGPAFile.dll
