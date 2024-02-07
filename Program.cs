@@ -11,6 +11,7 @@ namespace CourseGPAFile
             string choice;
             do
             {
+               
                 // ask user a question
                 Console.WriteLine("1) Read data from file.");
                 Console.WriteLine("2) Create file from data.");
@@ -20,70 +21,71 @@ namespace CourseGPAFile
 
                 if (choice == "1")
                 {
-                    // read data from file
-                    var grades = ReadFile(file);
-                    calculateGrade(grades);
+                    // read data from file and calculate GPA
+                    readFile(file);
                 }
                 else if (choice == "2")
                 {
-                    // write file from data
-                    StreamWriter sw = new StreamWriter(file, true);
-                    var response = Console.ReadLine().ToUpper();
-
-                    if (response != "Y") { break; }
-
-                    Console.WriteLine("Enter the ocurse name: ");
-                    string name = Console.ReadLine();
-
-                    Console.WriteLine("Enter the course grade: ");
-                    string grade = Console.ReadLine().ToUpper();
-
-                    sw.WriteLine("{0}|{1}", name, grade);
-                    sw.Close();
+                   createFile(file);
                 }
 
             } while (choice == "1" || choice == "2");
         }
 
-        private static void calculateGrade(string[] grades)
+        private static void calculateGrade(int gradePoints, int count)
         {
-            var gradePoints = 0;
-            for (int i = 0; i < grades.Length; i++)
-            {
-                gradePoints += grades[i] == "A" ? 4 : grades[i] == "B" ? 3 : grades[i] == "C" ? 2 : grades[i] == "D" ? 1 : 0;
-                Console.WriteLine(grades[i]);
-            }
-            double GPA = (double)gradePoints / grades.Length;
-            Console.WriteLine("GPA: {0:n2}", GPA);
+             // calculate GPA
+             double GPA = (double)gradePoints / count;
+             Console.WriteLine("GPA: {0:N2}", GPA);
         }
 
-        private static string[] ReadFile(string file)
+        private static void readFile(string file)
         {
-            string[] grades = new string[5];
             if (File.Exists(file))
             {
-                StreamReader sr = new StreamReader(file);
-                sr.ReadLine();
+                 // accumulators needed for GPA
+                int gradePoints = 0;
                 int count = 0;
+                // read data from file
+                StreamReader sr = new StreamReader(file);
 
                 while (!sr.EndOfStream)
                 {
                     var row = sr.ReadLine();
-                    var columns = row.Split('|');
+                    // split into name and letter grade
+                    var column = row.Split('|');
 
-                    var courseName = columns[0];
-                    var grade = columns[1];
+                    // display array data
+                    Console.WriteLine("Course: {0}, Grade: {1}", column[0], column[1]);
 
-                    var watching = columns[6];
-                    
-                    grades[count] = grade;
+                    // add to accumulators
+                    gradePoints += column[1] == "A" ? 4 : column[1] == "B" ? 3 : column[1] == "C" ? 2 : column[1] == "D" ? 1 : 0;
                     count++;
                 }
+                // call calculate GPA function
+                calculateGrade(gradePoints,count);
             } else
             {
                 Console.WriteLine("no file found");
             }
-            return grades;
+        }
+        private static void createFile(string file) {
+            // write file from data
+            StreamWriter sw = new StreamWriter(file, true);
+            // ask a question
+            Console.WriteLine("Enter a course (Y/N)?");
+            var response = Console.ReadLine().ToUpper();
+
+            if (response == "Y") {
+                Console.WriteLine("Enter the ocurse name: ");
+                string name = Console.ReadLine();
+
+                Console.WriteLine("Enter the course grade: ");
+                string grade = Console.ReadLine().ToUpper();
+
+                sw.WriteLine("{0}|{1}", name, grade);
+                sw.Close();
+            }
         }
     }
 }

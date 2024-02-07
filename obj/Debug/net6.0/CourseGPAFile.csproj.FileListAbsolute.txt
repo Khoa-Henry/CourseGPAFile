@@ -14,3 +14,19 @@ C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Debug\net6.0\refint\CourseGPAF
 C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.pdb
 C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.genruntimeconfig.cache
 C:\Users\knguyen11\dotnet class\CourseGPAFile\obj\Debug\net6.0\ref\CourseGPAFile.dll
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\courseData.txt
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\CourseGPAFile.exe
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\CourseGPAFile.deps.json
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\CourseGPAFile.runtimeconfig.json
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\CourseGPAFile.dll
+C:\School\DotNet database programming\CourseGPAFile\bin\Debug\net6.0\CourseGPAFile.pdb
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.AssemblyInfoInputs.cache
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.AssemblyInfo.cs
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.csproj.CoreCompileInputs.cache
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.sourcelink.json
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.dll
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\refint\CourseGPAFile.dll
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.pdb
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\CourseGPAFile.genruntimeconfig.cache
+C:\School\DotNet database programming\CourseGPAFile\obj\Debug\net6.0\ref\CourseGPAFile.dll

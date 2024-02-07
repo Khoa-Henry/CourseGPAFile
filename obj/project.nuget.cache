@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VIcH0PsdLxLG7b+YDX1pgUmyDhwgwsz/TLvvxSyAw/t0sCu8ryQplb+c18N/xjpYP3OdQww/Ry360LMYfnek3g==",
+  "dgSpecHash": "foU7xdBQqc5k6DuUWxQdQXtRgZVg0yxxjuzT6LVcHo3l6TJFcWIn860uWiTKd/o+aRsmJvMbKMxsfdG+ilh5gg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\knguyen11\\dotnet class\\CourseGPAFile\\CourseGPAFile.csproj",
+  "projectFilePath": "C:\\School\\DotNet database programming\\CourseGPAFile\\CourseGPAFile.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
