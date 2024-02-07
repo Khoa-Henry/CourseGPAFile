@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-CourseGPAFile",
+      "appliesTo": "CourseGPAFile.csproj",
+      "type": "msbuild"
+    },
+    {
+      "taskLabel": "task-courseData",
+      "appliesTo": "bin/Debug/net8.0/courseData.txt",
+      "type": "launch"
+    }
+  ]
+}
