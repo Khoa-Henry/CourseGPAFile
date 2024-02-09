@@ -11,7 +11,6 @@ namespace CourseGPAFile
             string choice;
             do
             {
-               
                 // ask user a question
                 Console.WriteLine("1) Read data from file.");
                 Console.WriteLine("2) Create file from data.");
@@ -47,20 +46,21 @@ namespace CourseGPAFile
                 int gradePoints = 0;
                 int count = 0;
                 // read data from file
-                StreamReader sr = new StreamReader(file);
+                using (StreamReader sr = new StreamReader(file))
+                { 
+                    while (!sr.EndOfStream)
+                    {
+                        var row = sr.ReadLine();
+                        // split into name and letter grade into ["course", "letterGrade"]
+                        var column = row.Split('|');
 
-                while (!sr.EndOfStream)
-                {
-                    var row = sr.ReadLine();
-                    // split into name and letter grade
-                    var column = row.Split('|');
+                        // display array data
+                        Console.WriteLine("Course: {0} | Grade: {1}", column[0], column[1]);
 
-                    // display array data
-                    Console.WriteLine("Course: {0}, Grade: {1}", column[0], column[1]);
-
-                    // add to accumulators
-                    gradePoints += column[1] == "A" ? 4 : column[1] == "B" ? 3 : column[1] == "C" ? 2 : column[1] == "D" ? 1 : 0;
-                    count++;
+                        // add to accumulators
+                        gradePoints += column[1] == "A" ? 4 : column[1] == "B" ? 3 : column[1] == "C" ? 2 : column[1] == "D" ? 1 : 0;
+                        count++;
+                    }
                 }
                 // call calculate GPA function
                 calculateGrade(gradePoints,count);

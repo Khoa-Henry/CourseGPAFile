@@ -1,2 +1,5 @@
 math|C
 biology|B
+Gym|A
+english|F
+gym|B
